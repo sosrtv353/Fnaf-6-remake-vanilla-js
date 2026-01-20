@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fnaf 6 - Main</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    
+    <div id="fade-overlay"></div>
+    <h1>Game Over!</h1>
+    <h2 id="complete">You Survived!</h2>
+    <main>
+        <img src="../animatronic images/molten-freddy.png" alt="" id="freddy-img" style="display: none;">
+        <img src="../animatronic images/scraptrap.png" alt="" id="scraptrap-img" style="display: none;">
+        <img src="../animatronic images/scrapbaby.png" alt="" id="scrapbaby-img" style="display: none;">
+        <img src="../animatronic images/lefty.png" alt="" id="lefty-img" style="display: none;">
+        <section id="computer" aria-label="computer with many different functions inside">
+            <h2 id="temp">Temp: 60F</h2>
+            <div id="options" aria-label="four buttons">
+                <button class="task">Tasks</button>
+                <button class="task">Map</button>
+                <button class="task">Sound</button>
+                <button class="task">Vent</button>
+            </div>
+            <div id="fan-button"><img src="../other images/vent-icon.png" alt=""></div>
+            <div id="power-button"><img src="../other images/power-button.png" alt=""></div>
+            <div id="option-output">
+                <div id="tasks"> 
+                    <!-- supplies > -->
+                    <div id="tasks-supplies" class="tasks">
+                        <button class="task">Order cups <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                        <button class="task">Order plates <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                        <button class="task">Order napkins <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                        <button class="task">Order Utensils <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                        <button class="task">Order pizza kits <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                    </div>
+                    <!-- supplies < -->
+
+                    <!-- advertisment > -->
+                    <div id="tasks-advert" class="tasks">
+                        <button class="task">Print flyers <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                        <button class="task">Print posters <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                        <button class="task">Print menus <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                    </div>
+                    <!-- advertisment < -->
+
+                    <!-- maintenance > -->
+                    <div id="tasks-maintenance" class="tasks">
+                        <button class="task">Unclog toilets <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                        <button class="task">Clean ovens <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                        <button class="task">Replace bulbs <img src="../other images/loading.png" alt="" class="loader" style="display: none;"></button>
+                    </div>
+                    <!-- maintenance < -->
+                    <button id="log">Log off</button>
+                </div>
+
+                <!-- overall map structure > -->
+                <div id="map" style="display: none;">
+                    <div id="vent-1"><div id="molten-freddy" class="animatronic"></div></div>
+                    <div id="vent-2"><div id="scraptrap" class="animatronic"></div></div>
+                    <div id="vent-3"></div>
+                    <div id="vent-4"><div id="scrapbaby" class="animatronic"></div></div>
+                    <div id="vent-5"><div id="lefty" class="animatronic"></div></div>
+                    <div id="vent-6"></div>
+                    <div id="vent-7"></div>
+                    <div id="pizzeria"><div id="player"></div></div>
+                    <div id="vent-8"></div>
+                    <div id="vent-9"></div>
+                    <div id="vent-10"></div>
+                    <div id="vent-11"></div>
+                    <div id="vent-12"></div>
+                    <div id="vent-13"></div>
+                    <div id="vent-14"></div>
+                    <div id="vent-15"></div>
+                    <div id="vent-16"></div>
+                    <div id="vent-17"></div>
+                </div>
+                <!-- audio lure > -->
+                <button id="sound-lure-button" style="display: none;">Activate audio lure <img src="../other images/sound.png" alt="Audio lure button"></button>
+                <p id="success">Audio lure is succesful!</p>
+                <!-- audio lure < -->
+
+                <!-- overall map structure < -->
+
+                <!-- silent vent system >  -->
+                <div id="silent-vent" style="display: none;">
+                    <img src="../other images/vent-icon.png" alt="silent vent button" >
+                    <button id="sv-button">Activate silent ventilation</button>
+                </div>
+                <!-- silent vent system <  -->
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
